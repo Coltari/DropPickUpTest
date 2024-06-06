@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://beuw35o6likbd"]
+
+[ext_resource type="Texture2D" uid="uid://b6w2tdcn00ugw" path="res://icon.svg" id="1_2lxwy"]
+[ext_resource type="Script" path="res://weapons/shotgunweapon.gd" id="1_o0bgm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8183i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2lxwy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Shotgunweapon" type="Node2D"]
+script = ExtResource("1_o0bgm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(74, 2.5)
+scale = Vector2(2.15625, 0.539063)
+sprite_frames = SubResource("SpriteFrames_8183i")
